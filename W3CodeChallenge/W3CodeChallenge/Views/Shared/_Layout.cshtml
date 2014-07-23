@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div class="logo">
+                    <img src="http://cdn-img.easylogo.cn/gif/51/51700.gif" />       
+        </div>
+   
+        <nav class="headerlinks">
+        
+               <a href="@Url.Action("Index", "Home")">Home</a>
+
+               
+                     <a href="@Url.Action("Index","About")">About</a>
+              
+              
+                    <a href="@Url.Action("Index","Work")">Work</a>
+           
+              
+                    <a href="@Url.Action("Index","Contact")">Contact</a>
+            
+                    <a href="@Url.Action("Index","Careers")">Careers</a>
+          
+               
+           
+        </nav>
+
+     </header>
+    <div id="content">
+        @RenderBody()
+    </div>
+    
+<footer>
+    <span>Copyright 2014 Fake Studio</span>
+
+    <div class="miniNav">
+            <ul class="links">
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                
+                <li><a href="@Url.Action("Index","About")">About</a></li>
+                
+                <li><a href="@Url.Action("Index","Work")">Work</a></li>
+                
+                <li><a href="@Url.Action("Index","Contact")">Contact</a></li>
+                
+                <li><a href="@Url.Action("Index","Careers")">Careers</a></li>           
+            </ul>
+    </div>
+                    
+</footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/Main.js"></script>
+</body>
+</html>

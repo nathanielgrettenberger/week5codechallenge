@@ -1,0 +1,21 @@
+﻿<h2>About</h2>
+<ul class="about">
+    <li data-url="@Url.Action("Who", "about")">
+        Who?
+    </li>
+       <li data-url="@Url.Action("What", "about")">
+        What?
+    </li>
+       <li data-url="@Url.Action("Why", "about")">
+       Why?
+    </li>
+       <li data-url="@Url.Action("Where", "about")">
+        Where?
+    </li>
+       <li data-url="@Url.Action("How", "about")">
+        How?
+    </li>
+</ul>
+<div id="tabContent">
+    @Html.Partial("Who")
+</div>
